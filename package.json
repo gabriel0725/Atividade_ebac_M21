@@ -7,15 +7,24 @@
     "build": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabriel0725/Atividade_ebac_M21.git"
+  },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gabriel0725/Atividade_ebac_M21/issues"
+  },
+  "homepage": "https://github.com/gabriel0725/Atividade_ebac_M21#readme",
   "description": "",
-  "devDependencies": {
-    "gulp": "^5.0.0",
-    "gulp-imagemin": "^9.1.0",
-    "gulp-sass": "^6.0.1",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.0.0",
     "gulp-uglify": "^3.0.2",
-    "gulp-watch": "^5.0.1",
-    "sass": "^1.86.0"
+    "sass": "^1.32.0"
+  },
+  "devDependencies": {
+    "gulp-imagemin": "^7.1.0"
   }
 }
