@@ -1,0 +1,29 @@
+@use 'variaveis';
+
+.about {
+    padding: 5.6vw;
+
+    &__tabs {
+        text-align: center;
+
+        &__button {
+            color: variaveis.$corTextoSecundario;
+            font-size: 20px;
+            border: none;
+            padding-bottom: 5px;
+            background: none;
+            text-transform: uppercase;
+            margin: 0 1vw;
+            cursor: pointer;
+            border-bottom: 5px solid transparent;
+
+            &--is-active {
+                border-color: variaveis.$corTextoSecundario;
+            }
+        }
+    }
+
+    .about__content_title {
+        padding-top: 38px;
+    }
+}

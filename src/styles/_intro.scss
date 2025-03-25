@@ -1,0 +1,13 @@
+
+.intro {
+    min-height: 100vh;
+    background-image: url(/dist/images/dk_three.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+    @media (max-width: 768px) {
+        
+        min-height: 240px;
+    }
+}
+
