@@ -1,3 +1,32 @@
 document.addEventListener('DOMContentLoaded', function(){
-    console.log('chegamo aqui');
+    const buttons = document.querySelectorAll('[data-tab-button]');
+
+    for (let i = 0; i < buttons.length; i++) {
+        buttons[i].addEventListener('click', function(botao) {
+            const abaAlvo = botao.target.dataset.tabButton;
+            const aba = document.querySelector(`[data-tab-id=${abaAlvo}]`);
+            esconderTodasAbas();
+            aba.classList.add('about__shows__list--is-active');
+            removeBotaoAtivo();
+            botao.target.classList.add('about__tabs__button--is-active');
+        })
+    }
 })
+
+
+
+function removeBotaoAtivo() {
+    const buttons = document.querySelectorAll('[data-tab-button]');
+
+    for (let i = 0; i < buttons.length; i++) {
+        buttons[i].classList.remove('about__tabs__button--is-active')
+    }
+}
+
+function esconderTodasAbas() {
+    const tabsContainer = document.querySelectorAll('[data-tab-id]');
+
+    for (let i = 0; i < tabsContainer.length; i++) {
+        tabsContainer[i].classList.remove('about__shows__list--is-active')
+    }
+}

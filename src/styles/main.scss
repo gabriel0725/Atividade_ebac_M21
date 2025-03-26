@@ -2,6 +2,8 @@
 @use 'variaveis';
 @use 'intro';
 @use 'about';
+@use 'plans';
+@use 'footer';
 
 
 
@@ -86,6 +88,29 @@ body {
     @media (max-width: 768px) {
         @include title(22px);
     }
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    font-size: 18px;
+    color: variaveis.$corTextoSecundario;
+    background-color: variaveis.$corBotaoPrimario;
+    text-transform: uppercase;
+    border-radius: 4px;
+    padding: 8px 14px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border: 1px solid variaveis.$corBotaoPrimario;
+
+    &:hover {
+        background-color: lighten(variaveis.$corBotaoPrimario, 3%);
+    }
+
+
 }
 
 

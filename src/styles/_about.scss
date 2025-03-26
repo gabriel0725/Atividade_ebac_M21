@@ -1,7 +1,42 @@
 @use 'variaveis';
 
 .about {
-    padding: 5.6vw;
+    padding: 2vw 5.6vw;
+
+    &__title__container {
+        text-align: center;
+        padding-bottom: 6%;
+    }
+
+
+    &__shows__list {
+        display: none;
+
+        &--is-active {
+            display: grid;
+        }
+
+    }
+    
+    &__related {
+        padding: 5.6vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 24px;   
+        
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr 1fr;
+        }
+        
+        &__item {
+            width: 100%;
+            max-width: 350px;
+
+            img {
+                max-width: 100%;
+            }
+        }
+    }
 
     &__tabs {
         text-align: center;
@@ -19,6 +54,10 @@
 
             &--is-active {
                 border-color: variaveis.$corTextoSecundario;
+            }
+    
+            @media (max-width: 768px) {
+                font-size: 16px;
             }
         }
     }

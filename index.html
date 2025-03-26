@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,65 +8,108 @@
     <link rel="stylesheet" href="./dist/css/main.css">
 
 </head>
-<body>    
+
+<body>
     <section class="intro">
-        
+
     </section>
     <section class="about">
+        <div class="about__title__container">
+            <h1 class="title">Batman</h1>
+            <p class="title--small">O cavaleiro das trevas</p>
+        </div>
         <nav class="about__tabs">
-            <button class="about__tabs__button about__tabs__button--is-active">
+            <button data-tab-button="sobre_filme" class="about__tabs__button about__tabs__button--is-active">
                 Sobre o filme
             </button>
-            <button class="about__tabs__button">
+            <button data-tab-button="relacionados" class="about__tabs__button">
                 Relacionados
             </button>
         </nav>
-        <div class="about__content">
-            <img src="./dist/images/dk_joker_movie.jpg" alt="poster do filme batman caveleiro das trevas">
-            <div class="about__content__text_container">
-                <h2 class="title--small">Sinopse</h2>
-                <p class="text">Após dois anos desde o surgimento do Batman (Christian Bale), os criminosos de Gotham City têm muito o que temer.
-                    Com a ajuda do tenente James Gordon (Gary Oldman) e do promotor público Harvey Dent (Aaron Eckhart), Batman luta contra o crime
-                    organizado. Acuados com o combate, os chefes do crime aceitam a proposta feita pelo Coringa (Heath Ledger) e o contratam para combater o Homem-Morcego.</p>
-                <h2 class="about__content_title title--small">Elenco</h2>
-                <ul>
-                    <li class="text">
-                        Christian Bale - Bruce Wayne
-                    </li>
-                    <li class="text">
-                        Heath Ledger - Joker
-                    </li>
-                    <li class="text">
-                        Aaron Eckhart - Harvey Dent
-                    </li>
-                    <li class="text">
-                        Michael Caine - Alfred
-                    </li>
-                    <li class="text">
-                        Gary Oldman - Gordon
-                    </li>
-                    <li class="text">
-                        Morgan Freeman - Lucius Fox
-                    </li>
-                </ul>
-                <h2 class="about__content_title title--small">Direção</h2>
-                <ul>
-                    <li class="text">
-                        Christopher Nolan
-                    </li>
-                </ul>
-                <h2 class="about__content_title title--small">Roteiristas</h2>
-                <ul>
-                    <li class="text">
-                        Jonathan Nolan
-                    </li>
-                    <li class="text">
-                        David S. Goyer
-                    </li>
-                </ul>
+        <div data-tab-id="sobre_filme" class="about__shows__list about__shows__list--is-active">
+            <div class="about__content">
+                <img src="./dist/images/dk_joker_movie.jpg" alt="poster do filme batman caveleiro das trevas">
+                <div class="about__content__text_container">
+                    <h2 class="title--small">Sinopse</h2>
+                    <p class="text">Após dois anos desde o surgimento do Batman (Christian Bale), os criminosos de
+                        Gotham City têm muito o que temer.
+                        Com a ajuda do tenente James Gordon (Gary Oldman) e do promotor público Harvey Dent (Aaron
+                        Eckhart), Batman luta contra o crime
+                        organizado. Acuados com o combate, os chefes do crime aceitam a proposta feita pelo Coringa
+                        (Heath Ledger) e o contratam para combater o Homem-Morcego.</p>
+                    <h2 class="about__content_title title--small">Elenco</h2>
+                    <div class="about__show">
+                        <ul>
+                            <li class="text">
+                                Christian Bale - Bruce Wayne
+                            </li>
+                            <li class="text">
+                                Heath Ledger - Joker
+                            </li>
+                            <li class="text">
+                                Aaron Eckhart - Harvey Dent
+                            </li>
+                            <li class="text">
+                                Michael Caine - Alfred
+                            </li>
+                            <li class="text">
+                                Gary Oldman - Gordon
+                            </li>
+                            <li class="text">
+                                Morgan Freeman - Lucius Fox
+                            </li>
+                        </ul>
+                        <h2 class="about__content_title title--small">Direção</h2>
+                        <ul>
+                            <li class="text">
+                                Christopher Nolan
+                            </li>
+                        </ul>
+                        <h2 class="about__content_title title--small">Roteiristas</h2>
+                        <ul>
+                            <li class="text">
+                                Jonathan Nolan
+                            </li>
+                            <li class="text">
+                                David S. Goyer
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            
+        </div>
+        <div data-tab-id="relacionados" class="about__shows__list">
+            <ul class="about__related">
+                <li class="about__related__item">
+                    <img src="/dist/images/the_bat_red_film.jpg" alt="">
+                    <p class="title--small">The Batman</p>
+                </li>
+                <li class="about__related__item">
+                    <img src="/dist/images/dk_begins.jpg" alt="">
+                    <p class="title--small">Batman Begins</p>
+                </li>
+                <li class="about__related__item">
+                    <img src="/dist/images/dk_rises.jpg" alt="">
+                    <p class="title--small">Batman o cavaleiro das trevas ressurge</p>
+                </li>
+                <li class="about__related__item">
+                    <img src="/dist/images/the_penguin_series.jpeg" alt="">
+                    <p class="title--small">The Penguin</p>
+                </li>
+            </ul>
         </div>
     </section>
+    <section class="plans">
+        <h2 class="title--small">Tudo isso e muito mais</h2>
+        <button class="button plans__btn">Assine agora</button>
+    </section>
+    <footer class="footer">
+        <div class="footer__container">
+            <p class="text--small">©2025 - TODOS OS DIREITOS RESERVADOS - ATIVIDADE MODULO 21 - GABRIEL MACHADO COUTINHO</p>
+        </div>
+    </footer>
+
+    <script src="./dist/js/main.js"></script>
 </body>
+
 </html>
